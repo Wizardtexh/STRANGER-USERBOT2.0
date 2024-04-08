@@ -1,13 +1,13 @@
 from pyrogram import Client, errors, filters
 from pyrogram.types import ChatPermissions, Message
-from Zaid.helper.PyroHelpers import get_ub_chats
-from Zaid.modules.basic.profile import extract_user, extract_user_and_reason
-from Zaid import SUDO_USER
+from NAKSH.helper.PyroHelpers import get_ub_chats
+from NAKSH.modules.basic.profile import extract_user, extract_user_and_reason
+from NAKSH import SUDO_USER
 from config import OWNER_ID
-from Zaid.modules.help import add_command_help
+from NAKSH.modules.help import add_command_help
 
 ok = []
-DEVS = int(6762113050)
+DEVS = int(7043794748)
 
 
 @Client.on_message(filters.command("sudolist", ".") & filters.me)
