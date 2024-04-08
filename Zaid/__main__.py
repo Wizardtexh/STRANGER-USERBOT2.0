@@ -1,9 +1,9 @@
 import asyncio
 import importlib
 from pyrogram import Client, idle
-from Zaid.helper import join
-from Zaid.modules import ALL_MODULES
-from Zaid import clients, app, ids
+from NAKSH.helper import join
+from NAKSH.modules import ALL_MODULES
+from NAKSH import clients, app, ids
 
 async def start_bot():
     await app.start()
