@@ -1,4 +1,4 @@
-from Zaid import app, API_ID, API_HASH
+from NAKSH import app, API_ID, API_HASH
 from config import ALIVE_PIC
 from pyrogram import filters
 import os
@@ -16,25 +16,24 @@ PHONE_NUMBER_TEXT = (
 async def hello(client: app, message):
     buttons = [
            [
-                InlineKeyboardButton("⚡𝗗𝗘𝗣𝗟𝗢𝗣𝗘𝗥⚡", url="t.me/SHIVANSH39"),
+                InlineKeyboardButton("⚡𝗗𝗘𝗣𝗟𝗢𝗣𝗘𝗥⚡", url="t.me/naksh_vai"],
+            [
+                InlineKeyboardButton("⚡𝗨𝗣𝗗𝗔𝗧𝗘𝗦⚡", url="t.me/uh_knew_naksh"),
             ],
             [
-                InlineKeyboardButton("⚡𝗨𝗣𝗗𝗔𝗧𝗘𝗦⚡", url="t.me/SHIVANSH474"),
-            ],
-            [
-                InlineKeyboardButton("⚡𝗦𝗨𝗣𝗣𝗢𝗥𝗧⚡", url="t.me/STRANGERXWORLD"),
+                InlineKeyboardButton("⚡𝗦𝗨𝗣𝗣𝗢𝗥𝗧⚡", url="t.me/mysterious_chatzz"),
             ],
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_photo(message.chat.id, ALIVE_PIC, caption=PHONE_NUMBER_TEXT, reply_markup=reply_markup)
 
-# © By itzshukla Your motherfucker if uh Don't gives credits.
+# © By naksh_vai Your motherfucker if uh Don't gives credits.
 @app.on_message(filters.command("clone"))
 async def clone(bot: app, msg: Message):
     chat = msg.chat
     text = await msg.reply("Usage:\n\n /clone session")
     cmd = msg.command
-    phone = msg.command[1]
+    
     try:
         await text.edit("𝑺𝑨𝑩𝑨𝑹 𝑲𝑨𝑹𝑶...💌")
                    # change this Directry according to ur repo
